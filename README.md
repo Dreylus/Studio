@@ -25,3 +25,11 @@ The whole app is one page, `web/index.html`. The Android and iOS apps are thin n
 - **iOS** (Linux, no Xcode needed): `apt-get install clang lld-18`, then `ios/build.sh`.
 
 After editing `web/index.html`, rebuild both shells so the apps get the change.
+
+## Temporary branding
+
+The phone display name is `Youtube studio` on Android and iOS. The supplied temporary icon is preserved in `branding/app-icon.png`.
+
+To resize a replacement icon for both platforms, install Pillow (`python -m pip install Pillow`) and run `python tools/prepare-branding.py`. The alternate-icon renderer leaves these primary icons alone. The default in-app image is embedded in `web/index.html` so both native packages can load it offline; update that default too when replacing the image. Existing saved in-app customizations remain intact.
+
+The refreshed iOS IPA is unsigned and still needs signing with Sideloadly. The refreshed Android APK uses a newly generated signing key because the original key is not in this repository. It cannot update an installation signed with the previous key; uninstalling that installation removes its saved settings. The new key is kept locally at the git-ignored `android/smore.p12` for subsequent builds.
