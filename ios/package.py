@@ -21,7 +21,7 @@ shutil.copy(os.path.join(I,'CreatorHub'),APP); os.chmod(os.path.join(APP,'Creato
 alts=sorted({f.split('@')[0] for f in os.listdir(os.path.join(I,'icons')) if not f.startswith('AppIcon')})
 info={
  'CFBundleDevelopmentRegion':'en','CFBundleExecutable':'CreatorHub','CFBundleIdentifier':'com.smore.creatorhub',
- 'CFBundleInfoDictionaryVersion':'6.0','CFBundleName':'Creator Hub','CFBundleDisplayName':'Creator Hub',
+ 'CFBundleInfoDictionaryVersion':'6.0','CFBundleName':'Youtube studio','CFBundleDisplayName':'Youtube studio',
  'CFBundlePackageType':'APPL','CFBundleShortVersionString':'1.0','CFBundleVersion':'1',
  'CFBundleSupportedPlatforms':['iPhoneOS'],'DTPlatformName':'iphoneos','DTPlatformVersion':'17.0','DTSDKName':'iphoneos17.0',
  'MinimumOSVersion':'15.0','LSRequiresIPhoneOS':True,'UIDeviceFamily':[1,2],'UIRequiredDeviceCapabilities':['arm64'],

@@ -1,4 +1,4 @@
-<title>Smore Creator Hub</title>
+<title>Youtube studio</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -305,7 +305,7 @@ input[type="range"]{flex:1;min-width:0;accent-color:var(--accent);height:28px}
 
 <div class="app">
   <header class="top" id="top">
-    <div class="brand"><span data-app-icon="34" id="top-icon"></span><b data-app-name id="top-name">Smore Hub</b></div>
+    <div class="brand"><span data-app-icon="34" id="top-icon"></span><b data-app-name id="top-name">Youtube studio</b></div>
     <button class="iconbtn" id="btn-create" aria-label="Create">
       <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9.5"/><path d="M12 7.5v9M7.5 12h9" stroke-linecap="round"/></svg>
     </button>
@@ -400,8 +400,8 @@ const FONTS=[
 
 /* ---------- sample data (all editable) ---------- */
 const DEFAULT={
-  appName:"Smore Hub",
-  appIcon:{type:"preset",preset:"lines",color:"#e3262d"},
+  appName:"Youtube studio",
+  appIcon:{type:"image",src:"data:image/png;base64,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"},
   channel:"Smoreh", subs:89137, avatar:null, font:"roboto",
   currency:"MX$", scale:100, quickEdit:true,
   videos:[
@@ -455,7 +455,7 @@ function refreshBrand(){
   document.querySelectorAll("[data-channel]").forEach(e=>e.textContent=CFG.channel);
   document.querySelectorAll("[data-subs]").forEach(e=>e.textContent=comma(CFG.subs));
   document.querySelectorAll("[data-money]").forEach(e=>e.textContent=moneyL(P().rev));
-  document.title=CFG.appName||"Smore Hub";
+  document.title=CFG.appName||"Youtube studio";
   syncNativeIcon();
 }
 function nearestSwatch(c){const rgb=h=>{h=String(h).replace("#","");if(h.length===3)h=h.split("").map(x=>x+x).join("");const n=parseInt(h,16)||0;return[n>>16&255,n>>8&255,n&255]};
